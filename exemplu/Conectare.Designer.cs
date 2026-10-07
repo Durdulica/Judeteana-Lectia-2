@@ -26,33 +26,57 @@
             this.btnLansare = new System.Windows.Forms.Button();
             this.lblIndemn = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lblTitlu
+            // 
             this.lblTitlu.AutoSize = true;
             this.lblTitlu.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblTitlu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(60)))));
             this.lblTitlu.Location = new System.Drawing.Point(24, 18);
             this.lblTitlu.Name = "lblTitlu";
+            this.lblTitlu.Size = new System.Drawing.Size(192, 25);
+            this.lblTitlu.TabIndex = 0;
             this.lblTitlu.Text = "Centrul de comanda";
+            // 
+            // lblEmail
+            // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(24, 72);
             this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(41, 19);
+            this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "Email";
+            // 
+            // txtEmail
+            // 
             this.txtEmail.Location = new System.Drawing.Point(100, 69);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(230, 25);
             this.txtEmail.TabIndex = 0;
+            // 
+            // lblParola
+            // 
             this.lblParola.AutoSize = true;
             this.lblParola.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblParola.ForeColor = System.Drawing.Color.White;
             this.lblParola.Location = new System.Drawing.Point(24, 112);
             this.lblParola.Name = "lblParola";
+            this.lblParola.Size = new System.Drawing.Size(47, 19);
+            this.lblParola.TabIndex = 2;
             this.lblParola.Text = "Parola";
+            // 
+            // txtParola
+            // 
             this.txtParola.Location = new System.Drawing.Point(100, 109);
             this.txtParola.Name = "txtParola";
+            this.txtParola.PasswordChar = '*';
             this.txtParola.Size = new System.Drawing.Size(230, 25);
             this.txtParola.TabIndex = 1;
-            this.txtParola.PasswordChar = '*';
+            // 
+            // btnLansare
+            // 
             this.btnLansare.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLansare.FlatAppearance.BorderSize = 0;
             this.btnLansare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -63,17 +87,32 @@
             this.btnLansare.TabIndex = 2;
             this.btnLansare.UseVisualStyleBackColor = false;
             this.btnLansare.Click += new System.EventHandler(this.btnLansare_Click);
+            // 
+            // lblIndemn
+            // 
             this.lblIndemn.AutoSize = true;
             this.lblIndemn.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.lblIndemn.ForeColor = System.Drawing.Color.Silver;
             this.lblIndemn.Location = new System.Drawing.Point(335, 146);
             this.lblIndemn.Name = "lblIndemn";
+            this.lblIndemn.Size = new System.Drawing.Size(132, 13);
+            this.lblIndemn.TabIndex = 3;
             this.lblIndemn.Text = "Apasa pe Start sau Enter";
-            this.AcceptButton = this.btnLansare;
+            // 
+            // Conectare
+            // 
+          
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(27)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(460, 190);
+            this.Controls.Add(this.lblTitlu);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.lblParola);
+            this.Controls.Add(this.txtParola);
+            this.Controls.Add(this.btnLansare);
+            this.Controls.Add(this.lblIndemn);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -82,13 +121,7 @@
             this.Name = "Conectare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conectare";
-            this.Controls.Add(this.lblTitlu);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.lblParola);
-            this.Controls.Add(this.txtParola);
-            this.Controls.Add(this.btnLansare);
-            this.Controls.Add(this.lblIndemn);
+            this.Load += new System.EventHandler(this.Conectare_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

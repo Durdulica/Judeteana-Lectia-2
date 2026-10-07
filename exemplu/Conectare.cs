@@ -11,6 +11,8 @@ namespace ExempluMisiune
         public Conectare()
         {
             InitializeComponent();
+            this.AcceptButton = btnLansare;
+            
         }
 
         private void btnLansare_Click(object sender, EventArgs e)
@@ -28,6 +30,11 @@ namespace ExempluMisiune
             txtEmail.Clear();
             txtParola.Clear();
             txtEmail.Focus();
+        }
+
+        private void Conectare_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

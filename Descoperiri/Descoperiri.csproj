@@ -72,6 +72,9 @@
     <Compile Include="Autentificare.Designer.cs">
       <DependentUpon>Autentificare.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Expeditie.resx">
+      <DependentUpon>Expeditie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Exploratori.resx">
       <DependentUpon>Exploratori.cs</DependentUpon>
     </EmbeddedResource>

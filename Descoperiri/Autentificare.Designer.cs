@@ -33,6 +33,7 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtParola = new System.Windows.Forms.TextBox();
             this.btnAcces = new System.Windows.Forms.Button();
+            this.lblIndemn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -72,6 +73,8 @@
             // 
             // btnAcces
             // 
+            this.btnAcces.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAcces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcces.Image = global::Descoperiri.Properties.Resources.barca;
             this.btnAcces.Location = new System.Drawing.Point(12, 12);
             this.btnAcces.Name = "btnAcces";
@@ -80,11 +83,22 @@
             this.btnAcces.UseVisualStyleBackColor = true;
             this.btnAcces.Click += new System.EventHandler(this.btnAcces_Click);
             // 
+            // lblIndemn
+            // 
+            this.lblIndemn.AutoSize = true;
+            this.lblIndemn.Location = new System.Drawing.Point(9, 133);
+            this.lblIndemn.Name = "lblIndemn";
+            this.lblIndemn.Size = new System.Drawing.Size(145, 13);
+            this.lblIndemn.TabIndex = 5;
+            this.lblIndemn.Text = "Apasa pe Caravela sau Enter";
+            // 
             // Autentificare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(450, 151);
+            this.Controls.Add(this.lblIndemn);
             this.Controls.Add(this.btnAcces);
             this.Controls.Add(this.txtParola);
             this.Controls.Add(this.txtEmail);
@@ -105,5 +119,6 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtParola;
         private System.Windows.Forms.Button btnAcces;
+        private System.Windows.Forms.Label lblIndemn;
     }
 }

@@ -54,20 +54,23 @@
             // 
             // btnSet
             // 
+            this.btnSet.BackColor = System.Drawing.Color.Orange;
+            this.btnSet.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSet.Location = new System.Drawing.Point(248, 80);
             this.btnSet.Name = "btnSet";
             this.btnSet.Size = new System.Drawing.Size(181, 34);
             this.btnSet.TabIndex = 2;
             this.btnSet.Text = "Set";
-            this.btnSet.UseVisualStyleBackColor = true;
+            this.btnSet.UseVisualStyleBackColor = false;
             this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Descoperiri.Properties.Resources.barca;
+            this.pictureBox1.Image = global::Descoperiri.Properties.Resources.explorator;
             this.pictureBox1.Location = new System.Drawing.Point(55, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 124);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -75,6 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(479, 155);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSet);
@@ -83,6 +87,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Exploratori";
             this.Text = "Exploratori";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Exploratori_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

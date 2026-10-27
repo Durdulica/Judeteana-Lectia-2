@@ -32,8 +32,8 @@
             this.lblExploratori = new System.Windows.Forms.Label();
             this.txtExploratori = new System.Windows.Forms.TextBox();
             this.btnSet = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picExplorator = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picExplorator)).BeginInit();
             this.SuspendLayout();
             // 
             // lblExploratori
@@ -64,15 +64,15 @@
             this.btnSet.UseVisualStyleBackColor = false;
             this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
             // 
-            // pictureBox1
+            // picExplorator
             // 
-            this.pictureBox1.Image = global::Descoperiri.Properties.Resources.explorator;
-            this.pictureBox1.Location = new System.Drawing.Point(55, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 124);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.picExplorator.Image = global::Descoperiri.Properties.Resources.explorator;
+            this.picExplorator.Location = new System.Drawing.Point(55, 21);
+            this.picExplorator.Name = "picExplorator";
+            this.picExplorator.Size = new System.Drawing.Size(109, 124);
+            this.picExplorator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picExplorator.TabIndex = 3;
+            this.picExplorator.TabStop = false;
             // 
             // Exploratori
             // 
@@ -80,15 +80,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(479, 155);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picExplorator);
             this.Controls.Add(this.btnSet);
             this.Controls.Add(this.txtExploratori);
             this.Controls.Add(this.lblExploratori);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Exploratori";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exploratori";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Exploratori_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExplorator)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,6 +102,6 @@
         private System.Windows.Forms.Label lblExploratori;
         private System.Windows.Forms.TextBox txtExploratori;
         private System.Windows.Forms.Button btnSet;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picExplorator;
     }
 }

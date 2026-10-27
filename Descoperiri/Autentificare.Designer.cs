@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autentificare));
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblParola = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -74,6 +75,7 @@
             // btnAcces
             // 
             this.btnAcces.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAcces.FlatAppearance.BorderSize = 0;
             this.btnAcces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcces.Image = global::Descoperiri.Properties.Resources.barca;
             this.btnAcces.Location = new System.Drawing.Point(12, 12);
@@ -104,6 +106,9 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblParola);
             this.Controls.Add(this.lblEmail);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Autentificare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autentificare";

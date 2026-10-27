@@ -9,7 +9,6 @@ namespace Descoperiri
         {
             InitializeComponent();
             this.AcceptButton = btnSet;
-            this.KeyPreview = true;
         }
 
 
@@ -20,7 +19,7 @@ namespace Descoperiri
 
             if(!esteNumar)
             {
-                MessageBox.Show("Nu ati introdus un numar", "Numar exploratori", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Nu ati introdus un numar", "Numar exploratori", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtExploratori.Clear();
                 txtExploratori.Focus();
                 return;
@@ -29,13 +28,13 @@ namespace Descoperiri
             if (nrExploratori < 30 || nrExploratori > 200)
             {
                 MessageBox.Show("Trebuie sa aveti cel putin 30 si cel mult 200 de exploratori", 
-                    "Numar exploratori", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    "Numar exploratori", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtExploratori.Clear();
                 txtExploratori.Focus();
                 return;
             }
 
-            Expeditie expeditie = new Expeditie();
+            Expeditie expeditie = new Expeditie(nrExploratori);
             expeditie.Show();
             Hide();
         }

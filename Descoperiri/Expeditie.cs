@@ -5,24 +5,16 @@ namespace Descoperiri
 {
     public partial class Expeditie : Form
     {
-        public Expeditie()
+        public Expeditie(int nrExploratori)
         {
             InitializeComponent();
-            KeyPreview = true;
             CancelButton = btnIesire;
+            lblExploratori.Text = "Exploraroei: " + nrExploratori;
         }
 
         private void btnIesire_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void Expeditie_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape) 
-            {
-                btnIesire_Click(sender,e);
-            }
         }
 
         private void Expeditie_FormClosed(object sender, FormClosedEventArgs e)

@@ -40,20 +40,20 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Font = new System.Drawing.Font("Harrington", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(145, 44);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(57, 13);
+            this.lblEmail.Size = new System.Drawing.Size(60, 13);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Utilizator";
             // 
             // lblParola
             // 
             this.lblParola.AutoSize = true;
-            this.lblParola.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParola.Font = new System.Drawing.Font("Harrington", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParola.Location = new System.Drawing.Point(159, 84);
             this.lblParola.Name = "lblParola";
-            this.lblParola.Size = new System.Drawing.Size(43, 13);
+            this.lblParola.Size = new System.Drawing.Size(45, 13);
             this.lblParola.TabIndex = 1;
             this.lblParola.Text = "Parola";
             // 
@@ -74,6 +74,7 @@
             // 
             // btnAcces
             // 
+            this.btnAcces.BackColor = System.Drawing.Color.Orange;
             this.btnAcces.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAcces.FlatAppearance.BorderSize = 0;
             this.btnAcces.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -82,7 +83,7 @@
             this.btnAcces.Name = "btnAcces";
             this.btnAcces.Size = new System.Drawing.Size(127, 118);
             this.btnAcces.TabIndex = 4;
-            this.btnAcces.UseVisualStyleBackColor = true;
+            this.btnAcces.UseVisualStyleBackColor = false;
             this.btnAcces.Click += new System.EventHandler(this.btnAcces_Click);
             // 
             // lblIndemn
@@ -98,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(450, 151);
             this.Controls.Add(this.lblIndemn);
             this.Controls.Add(this.btnAcces);
@@ -106,6 +107,7 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblParola);
             this.Controls.Add(this.lblEmail);
+            this.Font = new System.Drawing.Font("Harrington", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

@@ -10,7 +10,7 @@ namespace Descoperiri
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Exploratori());
+            Application.Run(new Autentificare());
         }
     }
 }
